@@ -56,6 +56,10 @@ body, html{
         font-size: 26.25px;
         line-height: 133.4%;
     }
+    h6{
+        font-size: 1rem;
+        font-weight: bold;
+    }
     img{
         transform: scale(0.7);
     }
@@ -70,6 +74,9 @@ body, html{
             color: $purple;
             background-color: $white;
         }
+        &.orange{
+            background-color: $red;
+        }
     }
     .tb{
         width: 400px;
@@ -80,15 +87,19 @@ body, html{
         border-radius: 30px;
         position: relative;
         text-align: initial;
+        *{
+            margin: 0 !important;
+        }
         .legend{
             color: $purple;
             font-style: bold;
             font-weight: 600;
-            font-size: 20px;
+            font-size: 15px;
             line-height: 163.4%;
         }
         input{
             display: block;
+            margin-top: 5px !important;
             width: calc(100% - 100px);
             outline: none;
         }
@@ -105,6 +116,34 @@ body, html{
             color: $white;
         }
     }
+    .capitalize{
+        text-transform: uppercase;
+    }
+    .expanded-text{
+        line-height: 163.4%;
+        letter-spacing: 0.3em;
+    }
+    .logo-container{
+        span{
+            color: $purple;
+        }
+        font-size: 34.0688px;
+        line-height: 163.4%;
+        font-weight: bold;
+        position: relative;
+        &::after{
+            content: 'US';
+            color: #9C9C9C;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14.07px;
+            line-height: 163.4%;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            position: absolute;
+            right: -25px;
+        }
+    }
     // ============ Header ============
     header{
         width: 100%;
@@ -115,27 +154,7 @@ body, html{
         *{
             display: inline-block;
         }
-        .logo-container{
-            span{
-                color: $purple;
-            }
-            font-size: 34.0688px;
-            line-height: 163.4%;
-            font-weight: bold;
-            position: relative;
-            &::after{
-                content: 'US';
-                color: #9C9C9C;
-                font-style: normal;
-                font-weight: 600;
-                font-size: 14.07px;
-                line-height: 163.4%;
-                letter-spacing: 0.08em;
-                text-transform: uppercase;
-                position: absolute;
-                right: -25px;
-            }
-        }
+        
         nav{
             a{
                 $margin-sides: 3vw;
@@ -205,6 +224,22 @@ body, html{
                 justify-content: space-between;
             }
         }
+        .hero-container{
+            position: relative;
+            &::after{
+                content: '';
+                position: absolute;
+                width: 400.43px;
+                height: 606.54px;
+                left: -550.45px;
+                bottom: -200.43px;
+
+                background: linear-gradient(198.28deg, #68BCF4 17.95%, #5585EF 95.16%);
+                mix-blend-mode: normal;
+                border-radius: 70px;
+                transform: rotate(-35.75deg);
+            }
+        }
         .features{
             text-align: center;
             *{
@@ -226,11 +261,9 @@ body, html{
                         background: linear-gradient(133.71deg, #5616C2 3.81%, #5585EF 90.22%);
                         color: $white;
                         vertical-align: middle;
-                        line-height: 150px;
-                        &:nth-of-type(3){background: linear-gradient(135deg, #3573FD 0%, #83CDFF 100%);}
-                    }
-                    .gradient-back:nth-of-type(2){
-                        background: linear-gradient(135deg, #FF1900 0%, rgba(255, 174, 18, 0.81) 100%) !important;
+                        line-height: 160px;
+                        &.three{background: linear-gradient(135deg, #3573FD 0%, #83CDFF 100%);}
+                        &.two{background: linear-gradient(135deg, #FF1900 0%, rgba(255, 174, 18, 0.81) 100%) !important;}
                     }
                     .learn-more{
                         color: $purple;
@@ -284,18 +317,70 @@ body, html{
 
     //============= Footer ================
     footer{
+        color: white;
         position: relative;
+        padding: 30px 70px;
+        margin-top: 100px;
+        background-color: $purple;
+        .flex{
+            display: flex;
+            justify-content: space-between;
+            & :nth-child(1){
+                margin-right: 20px;
+                .description{line-height: 163.4%;}
+                .social-links{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    font-size: 25px;
+                    margin: 20px 0;
+                }
+            }
+            
+            .flex-one{
+                font-size: 1.2rem;
+                h6{
+                    font-size: inherit;
+                }
+                *{
+                    margin-top: 15px;
+                }
+                a{
+                    display: block;
+                }
+            }
+            .news{
+                width: 300px;
+                *{
+                    font-size: 1.1rem;
+                    margin-top: 20px;
+                }
+            }
+        }
+        .logo-container span{color: $red;}
+        input{
+            padding: 17px;
+            border-radius: 10px;
+            width: 100%;
+        }
+        button{
+            display: block;
+        }
         &::after{
             position: absolute;
-            content: '';
-            left: -20px;
-
+            // content: '';
+            height: 300px;
+            width: 200px;
+            transform: rotate(90deg);
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
             background: linear-gradient(150.01deg, #5616C2 3.02%, rgba(86, 22, 194, 0.69) 92.79%);
             mix-blend-mode: normal;
             box-shadow: 0px 1px 42px 16px rgba(0, 0, 0, 0.52);
             border-radius: 70px;
             transform: rotate(-90deg);
         }
-
     }
 }

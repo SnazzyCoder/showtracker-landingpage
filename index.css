@@ -61,6 +61,11 @@ body h4, html h4 {
   line-height: 133.4%;
 }
 
+body h6, html h6 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
 body img, html img {
   -webkit-transform: scale(0.7);
           transform: scale(0.7);
@@ -81,6 +86,10 @@ body .cta.foreground, html .cta.foreground {
   background-color: #ffffff;
 }
 
+body .cta.orange, html .cta.orange {
+  background-color: #E94C48;
+}
+
 body .tb, html .tb {
   width: 400px;
   -webkit-box-sizing: content-box;
@@ -94,16 +103,21 @@ body .tb, html .tb {
   text-align: initial;
 }
 
+body .tb *, html .tb * {
+  margin: 0 !important;
+}
+
 body .tb .legend, html .tb .legend {
   color: #5616C2;
   font-style: bold;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 15px;
   line-height: 163.4%;
 }
 
 body .tb input, html .tb input {
   display: block;
+  margin-top: 5px !important;
   width: calc(100% - 100px);
   outline: none;
 }
@@ -119,6 +133,39 @@ body .tb button, html .tb button {
   border-radius: 0 30px 30px 0;
   font-weight: bold;
   color: #ffffff;
+}
+
+body .capitalize, html .capitalize {
+  text-transform: uppercase;
+}
+
+body .expanded-text, html .expanded-text {
+  line-height: 163.4%;
+  letter-spacing: 0.3em;
+}
+
+body .logo-container, html .logo-container {
+  font-size: 34.0688px;
+  line-height: 163.4%;
+  font-weight: bold;
+  position: relative;
+}
+
+body .logo-container span, html .logo-container span {
+  color: #5616C2;
+}
+
+body .logo-container::after, html .logo-container::after {
+  content: 'US';
+  color: #9C9C9C;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14.07px;
+  line-height: 163.4%;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  position: absolute;
+  right: -25px;
 }
 
 body header, html header {
@@ -137,30 +184,6 @@ body header, html header {
 
 body header *, html header * {
   display: inline-block;
-}
-
-body header .logo-container, html header .logo-container {
-  font-size: 34.0688px;
-  line-height: 163.4%;
-  font-weight: bold;
-  position: relative;
-}
-
-body header .logo-container span, html header .logo-container span {
-  color: #5616C2;
-}
-
-body header .logo-container::after, html header .logo-container::after {
-  content: 'US';
-  color: #9C9C9C;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14.07px;
-  line-height: 163.4%;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  position: absolute;
-  right: -25px;
 }
 
 body header nav a, html header nav a {
@@ -255,6 +278,24 @@ body main .hero-container .brands, body main .platforms .brands, body main .comm
           justify-content: space-between;
 }
 
+body main .hero-container, html main .hero-container {
+  position: relative;
+}
+
+body main .hero-container::after, html main .hero-container::after {
+  content: '';
+  position: absolute;
+  width: 400.43px;
+  height: 606.54px;
+  left: -550.45px;
+  bottom: -200.43px;
+  background: linear-gradient(198.28deg, #68BCF4 17.95%, #5585EF 95.16%);
+  mix-blend-mode: normal;
+  border-radius: 70px;
+  -webkit-transform: rotate(-35.75deg);
+          transform: rotate(-35.75deg);
+}
+
 body main .features, html main .features {
   text-align: center;
 }
@@ -287,14 +328,14 @@ body main .features .feature-list .feature .gradient-back, html main .features .
   background: linear-gradient(133.71deg, #5616C2 3.81%, #5585EF 90.22%);
   color: #ffffff;
   vertical-align: middle;
-  line-height: 150px;
+  line-height: 160px;
 }
 
-body main .features .feature-list .feature .gradient-back:nth-of-type(3), html main .features .feature-list .feature .gradient-back:nth-of-type(3) {
+body main .features .feature-list .feature .gradient-back.three, html main .features .feature-list .feature .gradient-back.three {
   background: linear-gradient(135deg, #3573FD 0%, #83CDFF 100%);
 }
 
-body main .features .feature-list .feature .gradient-back:nth-of-type(2), html main .features .feature-list .feature .gradient-back:nth-of-type(2) {
+body main .features .feature-list .feature .gradient-back.two, html main .features .feature-list .feature .gradient-back.two {
   background: linear-gradient(135deg, #FF1900 0%, rgba(255, 174, 18, 0.81) 100%) !important;
 }
 
@@ -349,13 +390,93 @@ body main .signup .tb, html main .signup .tb {
 }
 
 body footer, html footer {
+  color: white;
   position: relative;
+  padding: 30px 70px;
+  margin-top: 100px;
+  background-color: #5616C2;
+}
+
+body footer .flex, html footer .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body footer .flex :nth-child(1), html footer .flex :nth-child(1) {
+  margin-right: 20px;
+}
+
+body footer .flex :nth-child(1) .description, html footer .flex :nth-child(1) .description {
+  line-height: 163.4%;
+}
+
+body footer .flex :nth-child(1) .social-links, html footer .flex :nth-child(1) .social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 25px;
+  margin: 20px 0;
+}
+
+body footer .flex .flex-one, html footer .flex .flex-one {
+  font-size: 1.2rem;
+}
+
+body footer .flex .flex-one h6, html footer .flex .flex-one h6 {
+  font-size: inherit;
+}
+
+body footer .flex .flex-one *, html footer .flex .flex-one * {
+  margin-top: 15px;
+}
+
+body footer .flex .flex-one a, html footer .flex .flex-one a {
+  display: block;
+}
+
+body footer .flex .news, html footer .flex .news {
+  width: 300px;
+}
+
+body footer .flex .news *, html footer .flex .news * {
+  font-size: 1.1rem;
+  margin-top: 20px;
+}
+
+body footer .logo-container span, html footer .logo-container span {
+  color: #E94C48;
+}
+
+body footer input, html footer input {
+  padding: 17px;
+  border-radius: 10px;
+  width: 100%;
+}
+
+body footer button, html footer button {
+  display: block;
 }
 
 body footer::after, html footer::after {
   position: absolute;
-  content: '';
-  left: -20px;
+  height: 300px;
+  width: 200px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
   background: linear-gradient(150.01deg, #5616C2 3.02%, rgba(86, 22, 194, 0.69) 92.79%);
   mix-blend-mode: normal;
   -webkit-box-shadow: 0px 1px 42px 16px rgba(0, 0, 0, 0.52);
