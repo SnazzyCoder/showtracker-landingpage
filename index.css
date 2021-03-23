@@ -1,0 +1,367 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;0,800;0,900;1,400&display=swap");
+body, html {
+  margin: 0 auto;
+  overflow-x: hidden;
+  font-family: sans-serif;
+  font-size: 18px;
+  color: #383838;
+}
+
+body *, html * {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: none;
+  list-style: none;
+}
+
+body a, html a {
+  color: inherit;
+  text-decoration: none;
+}
+
+body input, body button, html input, html button {
+  font: inherit;
+}
+
+body button, body input[type="submit"], html button, html input[type="submit"] {
+  cursor: pointer;
+}
+
+body h1, html h1 {
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 3.5rem;
+  line-height: 123.4%;
+}
+
+body h2, html h2 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 52.5px;
+  line-height: 123.4%;
+}
+
+body h3, html h3 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 133.4%;
+}
+
+body h4, html h4 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26.25px;
+  line-height: 133.4%;
+}
+
+body img, html img {
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
+}
+
+body .cta, html .cta {
+  padding: 21px 30px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  background-color: #5616C2;
+  color: #ffffff;
+  border-radius: 18px;
+  font-weight: bold;
+}
+
+body .cta.foreground, html .cta.foreground {
+  color: #5616C2;
+  background-color: #ffffff;
+}
+
+body .tb, html .tb {
+  width: 400px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  padding: 10px 20px 20px;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 14px 47px 1px rgba(80, 80, 80, 0.2);
+          box-shadow: 0px 14px 47px 1px rgba(80, 80, 80, 0.2);
+  border-radius: 30px;
+  position: relative;
+  text-align: initial;
+}
+
+body .tb .legend, html .tb .legend {
+  color: #5616C2;
+  font-style: bold;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 163.4%;
+}
+
+body .tb input, html .tb input {
+  display: block;
+  width: calc(100% - 100px);
+  outline: none;
+}
+
+body .tb button, html .tb button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0 20px;
+  height: inherit;
+  background-color: #5616C2;
+  border-radius: 0 30px 30px 0;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+body header, html header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 30px;
+}
+
+body header *, html header * {
+  display: inline-block;
+}
+
+body header .logo-container, html header .logo-container {
+  font-size: 34.0688px;
+  line-height: 163.4%;
+  font-weight: bold;
+  position: relative;
+}
+
+body header .logo-container span, html header .logo-container span {
+  color: #5616C2;
+}
+
+body header .logo-container::after, html header .logo-container::after {
+  content: 'US';
+  color: #9C9C9C;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14.07px;
+  line-height: 163.4%;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  position: absolute;
+  right: -25px;
+}
+
+body header nav a, html header nav a {
+  margin-left: 3vw;
+  margin-right: 3vw;
+}
+
+body header::before, body header::after, html header::before, html header::after {
+  position: absolute;
+  width: 728px;
+  height: 800px;
+  right: -460px;
+  top: -100px;
+  z-index: -1;
+  content: '';
+  background: linear-gradient(150.01deg, #5616C2 3.02%, rgba(86, 22, 194, 0.69) 92.79%);
+  mix-blend-mode: normal;
+  -webkit-box-shadow: 0px 1px 42px 16px rgba(0, 0, 0, 0.52);
+          box-shadow: 0px 1px 42px 16px rgba(0, 0, 0, 0.52);
+  border-radius: 70px;
+  -webkit-transform: rotate(-35.75deg);
+          transform: rotate(-35.75deg);
+}
+
+body header::before, html header::before {
+  -webkit-transform: rotate(-17.49deg);
+          transform: rotate(-17.49deg);
+  background: linear-gradient(173.73deg, #E95C4D 3.08%, rgba(233, 92, 77, 0.78) 96.52%);
+}
+
+body main, html main {
+  position: relative;
+  padding: 0 auto;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+body main > *, html main > * {
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body main p, html main p {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 183.4%;
+}
+
+body main .hero-container, body main .platforms, body main .community, html main .hero-container, html main .platforms, html main .community {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body main .hero-container > *, body main .platforms > *, body main .community > *, html main .hero-container > *, html main .platforms > *, html main .community > * {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+body main .hero-container *:not(h1), body main .platforms *:not(h1), body main .community *:not(h1), html main .hero-container *:not(h1), html main .platforms *:not(h1), html main .community *:not(h1) {
+  margin-top: 20px;
+}
+
+body main .hero-container .right, body main .platforms .right, body main .community .right, html main .hero-container .right, html main .platforms .right, html main .community .right {
+  position: relative;
+}
+
+body main .hero-container .right img, body main .platforms .right img, body main .community .right img, html main .hero-container .right img, html main .platforms .right img, html main .community .right img {
+  position: absolute;
+  top: -100px;
+  right: 30px;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+body main .hero-container .brands, body main .platforms .brands, body main .community .brands, html main .hero-container .brands, html main .platforms .brands, html main .community .brands {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body main .features, html main .features {
+  text-align: center;
+}
+
+body main .features *, html main .features * {
+  margin: 20px 0;
+}
+
+body main .features .feature-list, html main .features .feature-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body main .features .feature-list .feature, html main .features .feature-list .feature {
+  margin: 0 auto;
+  max-width: 350px;
+}
+
+body main .features .feature-list .feature .gradient-back, html main .features .feature-list .feature .gradient-back {
+  width: 150px;
+  height: 150px;
+  border-radius: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 52px;
+  background: linear-gradient(133.71deg, #5616C2 3.81%, #5585EF 90.22%);
+  color: #ffffff;
+  vertical-align: middle;
+  line-height: 150px;
+}
+
+body main .features .feature-list .feature .gradient-back:nth-of-type(3), html main .features .feature-list .feature .gradient-back:nth-of-type(3) {
+  background: linear-gradient(135deg, #3573FD 0%, #83CDFF 100%);
+}
+
+body main .features .feature-list .feature .gradient-back:nth-of-type(2), html main .features .feature-list .feature .gradient-back:nth-of-type(2) {
+  background: linear-gradient(135deg, #FF1900 0%, rgba(255, 174, 18, 0.81) 100%) !important;
+}
+
+body main .features .feature-list .feature .learn-more, html main .features .feature-list .feature .learn-more {
+  color: #5616C2;
+  font-weight: bold;
+}
+
+body main .features > *:not(div), html main .features > *:not(div) {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+body main .platforms, html main .platforms {
+  margin: 300px auto;
+}
+
+body main .platforms .right img:nth-of-type(1), html main .platforms .right img:nth-of-type(1) {
+  top: -150px;
+  left: -20px;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+body main .platforms .right img:nth-of-type(2), html main .platforms .right img:nth-of-type(2) {
+  right: -300px;
+  top: -450px;
+  z-index: -1;
+}
+
+body main .community, html main .community {
+  margin: 400px auto 260px;
+}
+
+body main .community img, html main .community img {
+  max-width: 700px;
+  top: -150px !important;
+  right: -80px !important;
+}
+
+body main .signup, html main .signup {
+  text-align: center;
+  max-width: 900px;
+}
+
+body main .signup p, html main .signup p {
+  margin-top: 20px;
+}
+
+body main .signup .tb, html main .signup .tb {
+  margin: 20px auto;
+}
+
+body footer, html footer {
+  position: relative;
+}
+
+body footer::after, html footer::after {
+  position: absolute;
+  content: '';
+  left: -20px;
+  background: linear-gradient(150.01deg, #5616C2 3.02%, rgba(86, 22, 194, 0.69) 92.79%);
+  mix-blend-mode: normal;
+  -webkit-box-shadow: 0px 1px 42px 16px rgba(0, 0, 0, 0.52);
+          box-shadow: 0px 1px 42px 16px rgba(0, 0, 0, 0.52);
+  border-radius: 70px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+/*# sourceMappingURL=index.css.map */
