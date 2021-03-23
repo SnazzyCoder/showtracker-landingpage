@@ -71,6 +71,10 @@ body img, html img {
           transform: scale(0.7);
 }
 
+body .normal, html .normal {
+  font-family: Helvetica, sans-serif;
+}
+
 body .cta, html .cta {
   padding: 21px 30px;
   -webkit-box-sizing: content-box;
@@ -426,6 +430,12 @@ body footer .flex :nth-child(1) .social-links, html footer .flex :nth-child(1) .
           align-items: center;
   font-size: 25px;
   margin: 20px 0;
+}
+
+body footer .flex :nth-child(1) .thin.copy, html footer .flex :nth-child(1) .thin.copy {
+  line-height: 140.4%;
+  margin-top: 10px;
+  font-weight: 200;
 }
 
 body footer .flex .flex-one, html footer .flex .flex-one {

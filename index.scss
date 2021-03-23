@@ -63,6 +63,7 @@ body, html{
     img{
         transform: scale(0.7);
     }
+    .normal{font-family: Helvetica, sans-serif;}
     .cta{
         padding: 21px 30px;
         box-sizing: content-box;
@@ -334,6 +335,11 @@ body, html{
                     align-items: center;
                     font-size: 25px;
                     margin: 20px 0;
+                }
+                .thin.copy{
+                    line-height: 140.4%;
+                    margin-top: 10px;
+                    font-weight: 200;
                 }
             }
             
