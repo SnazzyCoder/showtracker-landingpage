@@ -279,6 +279,20 @@ body, html{
         }
         .platforms{
             margin: 300px auto;
+            .platform-features{
+                i{
+                    color: $purple;
+                    font-size: 1.3rem;
+                    line-height: 100%;
+                    padding-right: 20px;
+                    margin-top: 2px;
+                }
+                & > *{
+                    display: block;
+                    margin-top: 30px;
+                    font-weight: normal;
+                }
+            }
             .right{
                 img{
                     &:nth-of-type(1){

@@ -357,6 +357,20 @@ body main .platforms, html main .platforms {
   margin: 300px auto;
 }
 
+body main .platforms .platform-features i, html main .platforms .platform-features i {
+  color: #5616C2;
+  font-size: 1.3rem;
+  line-height: 100%;
+  padding-right: 20px;
+  margin-top: 2px;
+}
+
+body main .platforms .platform-features > *, html main .platforms .platform-features > * {
+  display: block;
+  margin-top: 30px;
+  font-weight: normal;
+}
+
 body main .platforms .right img:nth-of-type(1), html main .platforms .right img:nth-of-type(1) {
   top: -150px;
   left: -20px;
